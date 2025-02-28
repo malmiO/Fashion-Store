@@ -72,7 +72,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
       (function(){
-          emailjs.init(CONFIG.EMAILJS_PUBLIC_KEY);
+          emailjs.init(EMAILJS_PUBLIC_KEY);
       })();
     
       document.getElementById("contactForm").addEventListener("submit", function(event) {
@@ -86,7 +86,7 @@
               message: document.querySelector("textarea[name='message']").value
           };
     
-          emailjs.send(CONFIG.EMAILJS_SERVICE_ID, CONFIG.EMAILJS_TEMPLATE_ID, formData)
+          emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, formData)
           .then(response => {
               alert("Message sent successfully!");
               document.getElementById("contactForm").reset(); 
