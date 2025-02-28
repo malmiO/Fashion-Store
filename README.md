@@ -24,3 +24,11 @@ A modern and stylish **Fashion Store** static website built with **HTML, CSS, an
 1. Clone this repository:
    ```sh
    git clone https://github.com/yourusername/fashion-store.git
+
+2. Navigate to the project folder.
+      - cd fashion-store
+
+3. Open config.js and add your credentials.
+
+4. Open **index.html** in your browser.
+
