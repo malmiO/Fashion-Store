@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store</title>
+    <link href = "styles/index.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Fashion Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero-section">
+        <img src="/images/hero.png" alt="hero section image"/>
+        <div class="arrow">
+            <a href="#newcollection"><img src="/images/arrow-down.png" alt="arrow"/>
+            </a>
+        </div>
+    </div>
+
+    <section id="newcollection">
+        <div class="new_collection">
+            <h2>New Collection</h2>
+            <p>Discover over new collection and adorn your style with us !</p>
+    
+            <div class="new_collection_images_container">
+                <div class="new_collection_images">
+                    <img src="/images/col_3.png" alt="1st image of the new collection"/>
+                    <div class="card-content">
+                        <p>Anaya Skirt Set</p>
+                        <button class="read-more"><a href="products.html">View More</a></button>
+                    </div>
+                </div>
+                <div class="new_collection_images">
+                    <img src="/images/col_4.png" alt="2st image of the new collection"/>
+                    <div class="card-content">
+                        <p>Anaya Skirt Set</p>
+                        <button class="read-more"><a href="products.html">View More</a></button>
+                    </div>
+                </div>
+                <div class="new_collection_images">
+                    <img src="/images/col_2.png" alt="3st image of the new collection"/>
+                    <div class="card-content">
+                        <p>Anaya Skirt Set</p>
+                        <button class="read-more"><a href="products.html">View More</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <div class="Adds">
+        <img src="/images/8.png" alt="2025 new collection add"/>
+    </div>
+
+    <div class="products">
+        <h2>Our Products</h2>
+        
+        <div class="product_selector">
+            <p id="all">All</p>
+            <p id="best-selling">Best Selling</p>
+            <p id="party-wear">Party Ware</p>
+            <p id="new-arrivals">New Arrivals</p>
+        </div>
+
+        <div class="product_images_container">
+            <div class="product_images" data-category="new-arrivals">
+                <img src="/images/col_3.png" />
+                <div class="product_card-content">
+                    <div class="card-description">
+                        <h4>Trendy Oversized Hoodie</h4>
+                        <p>Rs.2500.00</p>
+                    </div>
+                    <button class="read-more"><a href="item.html">Read More</a></button>
+                </div>
+            </div>
+            <div class="product_images" data-category="best-selling">
+                <img src="/images/col_4.png" />
+                <div class="product_card-content">
+                    <div class="card-description">
+                        <p id="item-name">Lounge Dress</p>
+                        <p id="item-price">Rs.350.00</p>
+                    </div>
+                    <button class="read-more"><a href="item.html">Read More</a></button>
+                </div>
+            </div>
+            <div class="product_images" data-category="party-wear">
+                <img src="/images/col_2.png" />
+                <div class="product_card-content">
+                    <div class="card-description">
+                        <p id="item-name">Lounge Dress</p>
+                        <p id="item-price">Rs.350.00</p>
+                    </div>
+                    <button class="read-more"><a href="item.html">Read More</a></button>
+                </div>
+            </div>
+            <div class="product_images" data-category="new-arrivals">
+                <img src="/images/col_3.png" />
+                <div class="product_card-content">
+                    <div class="card-description">
+                        <p id="item-name">Lounge Dress</p>
+                        <p id="item-price">Rs.350.00</p>
+                    </div>
+                    <button class="read-more"><a href="item.html">Read More</a></button>
+                </div>
+            </div>
+            <div class="product_images" data-category="party-wear">
+                <img src="/images/col_4.png" />
+                <div class="product_card-content">
+                    <div class="card-description">
+                        <p id="item-name">Lounge Dress</p>
+                        <p id="item-price">Rs.350.00</p>
+                    </div>
+                    <button class="read-more"><a href="item.html">Read More</a></button>
+                </div>
+            </div>
+            <div class="product_images" data-category="best-selling">
+                <img src="/images/col_2.png" />
+                <div class="product_card-content">
+                    <div class="card-description">
+                        <p id="item-name">Lounge Dress</p>
+                        <p id="item-price">Rs.350.00</p>
+                    </div>
+                    <button class="read-more"><a href="item.html">Read More</a></button>
+                </div>
+            </div>
+        </div>
+        <button class="loadmore"><a href="item.html">Load More</a></button>
+    </div>
+
+    <div class="subscribe_section">
+        <img src="images/9.png"/>
+
+        <div class="subscribe_handler_container">
+            <h2>Let's stay in touch</h2>
+            <p>Connect with us and shop more ...!</p>
+
+            <div class="input_mail">
+                <form id="subscribeForm">
+                    <input type="email" id="emailInput" name="email" placeholder="Enter your email" required />
+                    <button type="submit">Subscribe</button>
+                    <p id="statusMessage"></p>
+                </form> 
+                <p id="statusMessage"></p>               
+                <p>We respect your privacy, so we never share your information.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="left_side">
+            <h1>Fashion Store</h1>
+            <p>We are providing quality products with our team.</p>
+        </div>
+        <div class="middle_part">
+            <h4>Contact Us</h4>
+            <p>+94 444 444 444</p>
+            <p>fashionstore@gmail.com</p>
+        </div>
+        <div class="right-side">
+            <h4>About Us</h4>
+            <h4>Our Products</h4>
+            <h4>Best Collection</h4>
+        </div>
+
+        <div class="footer_tail">
+            <div class="left">
+                <p>www.fashionstore.com</p>
+            </div>
+            <div class="left">
+                <p>All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script>
+        document.getElementById("subscribeForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+        
+            let email = document.getElementById("emailInput").value;
+            let statusMessage = document.getElementById("statusMessage");
+        
+            if (email) {
+                let formData = new FormData();
+                formData.append("email", email);
+        
+                fetch(CONFIG.FORMSPREE_URL, {
+                    method: "POST",
+                    body: formData,
+                    headers: { "Accept": "application/json" } 
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.ok) {
+                        statusMessage.innerText = "Subscription successful!";
+                        statusMessage.style.color = "green";
+                        document.getElementById("emailInput").value = "";
+                    } else {
+                        statusMessage.innerText = "Something went wrong, try again!";
+                        statusMessage.style.color = "red";
+                    }
+                })
+                .catch(error => {
+                    statusMessage.innerText = "Network error, please try again.";
+                    statusMessage.style.color = "red";
+                });
+            }
+        });
+        </script>
+    
+</body>
+</html>

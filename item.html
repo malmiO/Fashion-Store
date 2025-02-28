@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store</title>
+    <link href = "styles/item.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Fashion Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="navigations">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><img src="/images/next.png" alt="next arrow"/></li>
+                <li><a href="products.html">Products</a></li>
+                <li><img src="/images/next.png" alt="next arrow"/></li>
+                <li><a href="item.html">Item Name</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="item-display">
+        <div class="left-side">
+
+            <div class="image-display">
+                <div class="largeimg">
+                    <img id="product-image" src="/images/col_5.png">
+                </div>
+                <div class="pre-images">
+                    <img src="/images/col_5.png">
+                    <img src="/images/col_5.png">
+                    <img src="/images/col_5.png">
+                    <img src="/images/col_5.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="right-side">
+                <h2 id="product-name">Casual Tees</h2>
+                <p id="product-price">Rs.900.00</p>
+
+            <div class="colors">
+                <h3>Colors</h3>
+                <div class="color-options">
+                    <span class="color-option" style="background-color: #f2ff00;"></span>
+                    <span class="color-option" style="background-color: #e4a4a4;"></span>
+                    <span class="color-option" style="background-color: #1eff00;"></span>
+                    <span class="color-option" style="background-color: #fdfdfd;"></span>
+                    <span class="color-option" style="background-color: #2b00ff;"></span>
+                    <span class="color-option" style="background-color: #00d9ff;"></span>
+                    <span class="color-option" style="background-color: #ff00ae;"></span>
+                    <span class="color-option" style="background-color: #000000;"></span>
+                    <span class="color-option" style="background-color: #8800ff;"></span>
+                    <span class="color-option" style="background-color: #ff9100;"></span>
+                </div>
+            </div>
+
+            <div class="sizes">
+                <h3>Size</h3>
+                <div class="size-options">
+                    <button>S</button>
+                    <button>M</button>
+                    <button>L</button>
+                    <button>XL</button>
+                </div>
+            </div>
+
+            <div class="order-now">
+                <h3>Order Now</h3>
+            <a href="https://wa.me/+947XXXXXXXX" class="order-button" target="_blank">
+                <img src="/images/whatsapp.png" alt="WhatsApp" class="whatsapp-icon"> 077 XXX XXXX
+            </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="left_side">
+            <h1>Fashion Store</h1>
+            <p>We are providing quality products with our team.</p>
+        </div>
+        <div class="middle_part">
+            <h4>Contact Us</h4>
+            <p>+94 444 444 444</p>
+            <p>fashionstore@gmail.com</p>
+        </div>
+        <div class="right-side">
+            <h4>About Us</h4>
+            <h4>Our Products</h4>
+            <h4>Best Collection</h4>
+        </div>
+
+        <div class="footer_tail">
+            <div class="left">
+                <p>www.fashionstore.com</p>
+            </div>
+            <div class="left">
+                <p>All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Get product details from localStorage
+        const productName = localStorage.getItem('productName');
+        const productPrice = localStorage.getItem('productPrice');
+        const productImage = localStorage.getItem('productImage');
+
+        // Display product details on the page
+        document.getElementById('product-name').textContent = productName;
+        document.getElementById('product-price').textContent = productPrice;
+        document.getElementById('product-image').src = productImage;
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store</title>
+    <link href = "styles/contact.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Fashion Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero-section">
+        <img src="/images/about.png" alt="hero section image"/>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact-container">
+        <div class="contact-image">
+            <img src="images/contact.png" alt="Person Image">
+        </div>
+        <div class="contact-form">
+            <h2>Get in Touch</h2>
+            <form id="contactForm">
+                <div class="input-row">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" placeholder="Message" rows="5" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="left_side">
+            <h1>Fashion Store</h1>
+            <p>We are providing quality products with our team.</p>
+        </div>
+        <div class="middle_part">
+            <h4>Contact Us</h4>
+            <p>+94 444 444 444</p>
+            <p>fashionstore@gmail.com</p>
+        </div>
+        <div class="right-side">
+            <h4>About Us</h4>
+            <h4>Our Products</h4>
+            <h4>Best Collection</h4>
+        </div>
+
+        <div class="footer_tail">
+            <div class="left">
+                <p>www.fashionstore.com</p>
+            </div>
+            <div class="left">
+                <p>All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      (function(){
+          emailjs.init(EMAILJS_PUBLIC_KEY);
+      })();
+    
+      document.getElementById("contactForm").addEventListener("submit", function(event) {
+          event.preventDefault(); 
+    
+          // Collect form data
+          let formData = {
+              name: document.querySelector("input[name='name']").value,
+              email: document.querySelector("input[name='email']").value,
+              subject: document.querySelector("input[name='subject']").value,
+              message: document.querySelector("textarea[name='message']").value
+          };
+    
+          emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, formData)
+          .then(response => {
+              alert("Message sent successfully!");
+              document.getElementById("contactForm").reset(); 
+          })
+          .catch(error => {
+              alert("Error sending message. Please try again.");
+              console.error("EmailJS Error:", error);
+          });
+      });
+    </script>
+    
+</body>
+</html>
