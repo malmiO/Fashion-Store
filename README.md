@@ -2,7 +2,7 @@
 
 A modern and stylish **Fashion Store** static website built with **HTML, CSS, and JavaScript**. This website showcases fashion collections, products, and brand details. It includes a **subscription feature**, a **contact form**, and **WhatsApp integration** for direct communication.
 
-live link : fashionstore-temp.netlify.app
+live link : https://fashionstore-temp.netlify.app
 
 ## 🚀 Features
 
